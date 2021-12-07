@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<title>FireTV Remote</title>
+	<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script defer src="./index.js"></script>	
+</head>
+<body>
+
+<main>
+	<p>FireTV Remote</p>
+	<section class="remote">
+		<div class='top'>
+			<button id='power' type='button'>Power</button>
+		</div>
+		<div class='hk'>
+			<button id='up' type='button'>Up</button>
+			<button id='left' type='button'>Left</button>
+			<button id='ok' type='button'>OK</button>
+			<button id='down' type='button'>Down</button>
+			<button id='right' type='button'>Right</button>
+		</div>
+
+		<div class='grid'>
+			<button id='back' type='button'>Back</button>
+			<button id='home' type='button'>Home</button>
+			<button id='menu' type='button'>Menu</button>
+
+			<button id='rewind' type='button'>Rewind</button>
+			<button id='play/pause' type='button'>Play/Pause</button>
+			<button id='fastforward' type='button'>FastForward</button>
+		</div>
+
+		<div class='sound'>
+			<button id='sound+' type='button'>Sound +</button>
+			<button id='sound-' type='button'>Sound -</button>
+			<button id='mute' type='button'>Mute</button>
+		</div>
+	</section>
+</main>
+
+
+</body>
+</html>

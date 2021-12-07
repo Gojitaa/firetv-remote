@@ -1,0 +1,21 @@
+{
+  "name": "firetv-remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && rm -rf ./dist && parcel serve index.html",
+    "start:gateway": "cd gateway && node server.js",
+    "start": "concurrently \"npm run start:gateway\" \"npm run start:client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "socket.io": "^4.4.0"
+  }
+}
