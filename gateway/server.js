@@ -19,7 +19,7 @@ io.on("connection", async (socket) => {
   await exec('adb disconnect')
   handleExec(await exec('adb kill-server'))
   handleExec(await exec('adb start-server'))
-  handleExec(await exec(`adb connect 192.168.0.183`))
+  handleExec(await exec(`adb connect ${process.env.DEVICE_IP}`))
   handleExec(await exec('adb devices -l'))
 
   socket.on("command", data => {
